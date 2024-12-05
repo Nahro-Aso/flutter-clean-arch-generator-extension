@@ -1,0 +1,39 @@
+{
+  "name": "flutter-clean-arch-generator",
+  "displayName": "Your Extension Display Name",
+  "description": "Description of your extension",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nahro-Aso/flutter-clean-arch-generator.git"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "riverpod-clean-arch.generate",
+        "title": "Generate Riverpod Clean Architecture Feature"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "npx tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "dependencies": {
+    "@types/node": "^22.10.1",
+    "@types/vscode": "^1.95.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "typescript": "^5.7.2"
+  }
+}
