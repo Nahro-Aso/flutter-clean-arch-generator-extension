@@ -1,13 +1,13 @@
-import { writeFile } from '../../utils/fileUtils';
+import { writeFile } from "../../utils/fileUtils";
 
 export async function generateRepository(
-    featurePath: string,
-    featureName: string,
-    capitalized: string,
-    packageName: string,
-    providerName: string
+  featurePath: string,
+  featureName: string,
+  capitalized: string,
+  packageName: string,
+  providerName: string
 ) {
-    const content = `import 'package:flutter_riverpod/flutter_riverpod.dart';
+  const content = `import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:${packageName}/features/${featureName}/data/repositories/${featureName}_repository_impl.dart';
 import 'package:${packageName}/features/${featureName}/data/sources/remote/${featureName}_remote_data_source.dart';
 
@@ -21,5 +21,8 @@ final ${providerName}RepositoryProvider = Provider<${capitalized}Repository>(
   ),
 );`;
 
-    await writeFile(`${featurePath}/domain/repositories/${featureName}_repository.dart`, content);
+  await writeFile(
+    `${featurePath}/domain/repositories/${featureName}_repository.dart`,
+    content
+  );
 }

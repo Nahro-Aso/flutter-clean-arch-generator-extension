@@ -13,3 +13,4 @@ final \${providerName}RepositoryProvider = Provider<\${capitalized}Repository>(
     remoteDataSource: ref.watch(\${providerName}RemoteDataSourceProvider),
   ),
 );`;
+//# sourceMappingURL=repository.template.js.map

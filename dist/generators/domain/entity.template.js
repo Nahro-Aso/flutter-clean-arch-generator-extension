@@ -8,3 +8,4 @@ exports.default = `class \${capitalized}Entity {
   });
   // TODO: Add entity properties and methods
 }`;
+//# sourceMappingURL=entity.template.js.map

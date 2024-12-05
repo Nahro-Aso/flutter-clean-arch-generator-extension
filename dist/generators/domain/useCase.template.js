@@ -16,3 +16,4 @@ final get\${capitalized}UseCaseProvider = Provider<Get\${capitalized}UseCase>(
     ref.watch(\${providerName}RepositoryProvider),
   ),
 );`;
+//# sourceMappingURL=useCase.template.js.map

@@ -11,3 +11,4 @@ function camelCase(name) {
     const capitalized = capitalizeFeatureName(name);
     return capitalized.charAt(0).toLowerCase() + capitalized.slice(1);
 }
+//# sourceMappingURL=stringUtils.js.map

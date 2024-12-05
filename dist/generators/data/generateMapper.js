@@ -1,19 +1,9 @@
 "use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.generateMapper = generateMapper;
 const fileUtils_1 = require("../../utils/fileUtils");
-function generateMapper(featurePath, featureName, capitalized, packageName) {
-    return __awaiter(this, void 0, void 0, function* () {
-        const content = `import 'package:${packageName}/features/${featureName}/domain/entities/${featureName}_entity.dart';
+async function generateMapper(featurePath, featureName, capitalized, packageName) {
+    const content = `import 'package:${packageName}/features/${featureName}/domain/entities/${featureName}_entity.dart';
 import 'package:${packageName}/features/${featureName}/data/dto/${featureName}_dto.dart';
 
 class ${capitalized}Mapper {
@@ -41,6 +31,6 @@ class ${capitalized}Mapper {
     );
   }
 }`;
-        yield (0, fileUtils_1.writeFile)(`${featurePath}/data/mappers/${featureName}_mapper.dart`, content);
-    });
+    await (0, fileUtils_1.writeFile)(`${featurePath}/data/mappers/${featureName}_mapper.dart`, content);
 }
+//# sourceMappingURL=generateMapper.js.map

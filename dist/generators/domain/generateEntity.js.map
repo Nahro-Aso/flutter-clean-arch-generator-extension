@@ -1,0 +1,1 @@
+{"version":3,"file":"generateEntity.js","sourceRoot":"","sources":["../../../src/generators/domain/generateEntity.ts"],"names":[],"mappings":";;AAEA,wCAeC;AAjBD,qDAAkD;AAE3C,KAAK,UAAU,cAAc,CAChC,WAAmB,EACnB,WAAmB,EACnB,WAAmB;IAEnB,MAAM,OAAO,GAAG,SAAS,WAAW;;;UAG9B,WAAW;;;;EAInB,CAAC;IAEC,MAAM,IAAA,qBAAS,EAAC,GAAG,WAAW,oBAAoB,WAAW,cAAc,EAAE,OAAO,CAAC,CAAC;AAC1F,CAAC"}
