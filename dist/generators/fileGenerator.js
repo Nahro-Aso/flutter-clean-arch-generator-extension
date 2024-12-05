@@ -14,6 +14,5 @@ async function generateFiles(featureName, featureRoot, packageName) {
     // Generate Presentation Layer
     await (0, presentationLayer_1.generatePresentationLayer)(featureName, pascalCaseName, featureRoot, packageName, providerName);
 }
-async function generateDataLayer(featureName, pascalCaseName, featureRoot) {
-}
+async function generateDataLayer(featureName, pascalCaseName, featureRoot) { }
 //# sourceMappingURL=fileGenerator.js.map
