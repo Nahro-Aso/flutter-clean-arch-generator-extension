@@ -1,18 +1,18 @@
 export const properties = `
-  final String id;
+  final String ? id;
   // TODO: Add more DTO properties
 `;
 
 export const constructor = (className: string) => `
   const ${className}({
-    required this.id,
+      this.id,
   });
 `;
 
 export const fromJson = (className: string) => `
   factory ${className}.fromJson(Map<String, dynamic> json) {
     return ${className}(
-      id: json['id'] as String,
+    
       // TODO: Map other properties from json
     );
   }
@@ -21,8 +21,7 @@ export const fromJson = (className: string) => `
 export const toJson = `
   Map<String, dynamic> toJson() {
     return {
-      'id': id,
-      // TODO: Map other properties to json
+    
     };
   }
 `;
@@ -30,7 +29,7 @@ export const toJson = `
 export const toString = (className: string) => `
   @override
   String toString() {
-    return '${className}(id: \$id)';
+    return '${className}()';
   }
 `;
 

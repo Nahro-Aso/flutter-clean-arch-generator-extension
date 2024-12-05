@@ -1,5 +1,5 @@
 import { writeFile } from "../../utils/fileUtils";
-import { mapperTemplate } from "../../templates/data/mapperTemplate";
+import { mapperTemplate } from "../../templates/data/mapper.template";
 
 export async function generateMapper(
   featurePath: string,

@@ -1,10 +1,12 @@
 export const entityTemplate = (
   capitalized: string
 ) => `class ${capitalized}Entity {
-  final String id;
 
-  const ${capitalized}Entity({
-    required this.id,
+ const ${capitalized}Entity({
+      this.id,
   });
+  final String? id;
+
+ 
   // TODO: Add entity properties and methods
 }`;

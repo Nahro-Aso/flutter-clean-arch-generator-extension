@@ -1,5 +1,5 @@
 import { writeFile } from "../../utils/fileUtils";
-import { entityTemplate } from "../../templates/domain/entityTemplate";
+import { entityTemplate } from "../../templates/domain/entity.template";
 
 export async function generateEntity(
   featurePath: string,

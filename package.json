@@ -2,7 +2,7 @@
   "name": "flutter-clean-arch-generator",
   "displayName": "Riverpod Clean Architecture Generator for Flutter",
   "description": "A VS Code extension that generates boilerplate code following clean architecture principles with Riverpod state management for Flutter projects.",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "repository": {
     "type": "git",
     "url": "https://github.com/Nahro-Aso/riverpod_clean_arch_generator.git"

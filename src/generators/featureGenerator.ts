@@ -9,7 +9,9 @@ import { generatePresentationLayer } from "./presentation/presentationLayer";
 export async function generateFeatureFiles(
   workspaceFolder: vscode.WorkspaceFolder,
   featureName: string,
-  packageName: string
+  packageName: string,
+  providerType: string,
+  modifiers: string
 ) {
   const featurePath = `${workspaceFolder.uri.fsPath}/lib/features/${featureName}`;
 
@@ -36,7 +38,9 @@ export async function generateFeatureFiles(
     featureName,
     capitalized,
     packageName,
-    providerName
+    providerName,
+    providerType,
+    modifiers
   );
   await generateBarrelFiles(featurePath, featureName);
 }

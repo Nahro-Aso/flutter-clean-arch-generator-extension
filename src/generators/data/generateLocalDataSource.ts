@@ -1,5 +1,5 @@
 import { writeFile } from "../../utils/fileUtils";
-import { localDataSourceTemplate } from "../../templates/data/localDataSource";
+import { localDataSourceTemplate } from "../../templates/data/local_data_source.template";
 
 export async function generateLocalDataSource(
   featurePath: string,

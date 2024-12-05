@@ -7,7 +7,9 @@ export async function generatePresentationLayer(
   featureName: string,
   capitalized: string,
   packageName: string,
-  providerName: string
+  providerName: string,
+  providerType: string,
+  modifiers: string
 ) {
   await createDirectory(`${featurePath}/presentation/pages`);
   await createDirectory(`${featurePath}/presentation/providers`);
@@ -18,13 +20,16 @@ export async function generatePresentationLayer(
     featureName,
     capitalized,
     packageName,
-    providerName
+    providerName,
+    providerType
   );
   await generateNotifier(
     featurePath,
     featureName,
     capitalized,
     packageName,
-    providerName
+    providerName,
+    providerType,
+    modifiers
   );
 }

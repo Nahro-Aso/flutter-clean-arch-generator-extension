@@ -5,7 +5,9 @@ import { generateDomainLayer } from "./domain/domainLayer";
 export async function generateFiles(
   featureName: string,
   featureRoot: string,
-  packageName: string
+  packageName: string,
+  providerType: string,
+  modifiers: string
 ) {
   const pascalCaseName = capitalizeFeatureName(featureName);
   const providerName = camelCase(featureName);
@@ -24,11 +26,13 @@ export async function generateFiles(
 
   // Generate Presentation Layer
   await generatePresentationLayer(
+    featureRoot,
     featureName,
     pascalCaseName,
-    featureRoot,
     packageName,
-    providerName
+    providerName,
+    providerType,
+    modifiers
   );
 }
 

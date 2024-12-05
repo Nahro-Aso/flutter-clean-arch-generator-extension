@@ -6,7 +6,7 @@ import {
   hashCode,
   constructor,
   toString,
-} from "../../templates/data/dtoTemplate";
+} from "../../templates/data/dto.template";
 import { writeFile } from "../../utils/fileUtils";
 
 export async function generateDto(
